@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MyShop</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<header class="main-header">
+  <div class="logo">MyShop</div>
+  <form action="#" method="get" class="search-form">
+    <input type="text" placeholder="Search for products, brands and more" class="search-bar" />
+  </form>
+  <div class="header-icons">
+    <div class="wishlist" title="Wishlist">
+      <i class="fa-regular fa-heart" aria-label="Wishlist"></i>
+    </div>
+    <div class="cart">
+  <a href="cart.html" class="cart-icon" title="View Cart">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span id="cart-count">0</span>
+  </a>
+</div>
+    <div class="profile" title="Profile">
+  <i class="fa-solid fa-user" aria-label="Profile"></i>
+</div>
+  </div>
+</header>
+
+
+
+  <nav>
+   <ul class="nav-menu">
+    <li class="nav-item-with-dropdown">
+    <a href="index.html">Home</a>
+  </li>
+
+  <li class="nav-item-with-dropdown">
+    <a href="#dresses">Dresses</a>
+    <ul class="dropdown-menu">
+      <li><a href="#dresses">Men's Wear</a></li>
+      <li><a href="#dresses">Women's Western</a></li>
+      <li><a href="#dresses">Kids</a></li>
+      <li><a href="#dresses">Maxi Dress</a></li>
+      <li><a href="#dresses">Casual Dress</a></li>
+      <li><a href="#dresses">Party Dress</a></li>
+      <li><a href="#dresses">Floral Dress</a></li> 
+    </ul>
+  </li>
+  <li class="nav-item-with-dropdown">
+    <a href="#cosmetics">Cosmetics</a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Lipsticks</a></li>
+      <li><a href="#">Skincare</a></li>
+      <li><a href="#">Perfumes</a></li>
+      <li><a href="#">Matte Lipstick</a></li>
+      <li><a href="#">Liquid Foundation</a></li>
+      <li><a href="#">Waterproof Mascara</a></li>
+      <li><a href="#">Compact Powder</a></li>
+      <li><a href="#">Makeup Remover</a></li>
+      <li><a href="#">Blush Palette</a></li>
+
+    </ul>
+  </li>
+  <li class="nav-item-with-dropdown">
+    <a href="#footwear">Footwear</a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Sneakers</a></li>
+      <li><a href="#">Sandals</a></li>
+      <li><a href="#">Heels</a></li>
+      <li><a href="#">Running Shoes</a></li>
+      <li><a href="#">Ankle Boots</a></li>
+      <li><a href="#">Comfort Slides</a></li>
+      <li><a href="#">Casual Loafers</a></li>
+    </ul>
+  </li>
+  <li class="nav-item-with-dropdown">
+    <a href="#jewellery">Jewellery</a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Necklaces</a></li>
+      <li><a href="#">Earrings</a></li>
+      <li><a href="#">Rings</a></li>
+      <li><a href="#">Studded Ring</a></li>
+      <li><a href="#">Silver Bangles</a></li>
+      
+    </ul>
+  </li>
+  <li class="nav-item-with-dropdown">
+    <a href="#electronics">Electronics</a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Mobiles</a></li>
+      <li><a href="#">Headphones</a></li>
+      <li><a href="#">Smart Watches</a></li>
+      <li><a href="#">Wireless Earbuds</a></li>
+      <li><a href="#">Smart Phones</a></li>
+    </ul>
+  </li>
+</ul>
+
+  </nav>
+
+  <div class="carousel">
+    <div class="carousel-container">
+      <div class="carousel-slide"><img src="images/banner1.jpg" alt="Banner 1" /></div>
+      <div class="carousel-slide"><img src="images/banner2.jpg" alt="Banner 2" /></div>
+      <div class="carousel-slide"><img src="images/banner3.jpg" alt="Banner 3" /></div>
+    </div>
+  </div>
+  
+
+  <section class="category-collections">
+    <h3>Shop by Category</h3>
+    <div class="category-grid">
+      <a href="#dresses" class="category-card" style="background-image: url('images/dress.avif'); background-size: cover; background-position: center;">
+        <div class="overlay"><h4>Dresses</h4></div>
+      </a>
+      <a href="#cosmetics" class="category-card" style="background-image: url('images/cosmetics.jpg'); background-size: cover; background-position: center;">
+        <div class="overlay"><h4>Cosmetics</h4></div>
+      </a>
+      <a href="#footwear" class="category-card" style="background-image: url('images/footware.jpg'); background-size: cover; background-position: center;">
+        <div class="overlay"><h4>Footwear</h4></div>
+      </a>
+      <a href="#jewellery" class="category-card" style="background-image: url('images/jewellery.jpg'); background-size: cover; background-position: center;">
+        <div class="overlay"><h4>Jewellery</h4></div>
+      </a>
+      <a href="#electronics" class="category-card" style="background-image: url('images/electonics.jpg'); background-size: cover; background-position: center;">
+        <div class="overlay"><h4>Electronics</h4></div>
+      </a>
+      <a href="kitchen.html" class="category-card" style="background-image: url('images/kitchen.jpg'); background-size: cover; background-position: center;">
+        <div class="overlay"><h4>Kitchen Essentials</h4></div>
+      </a>
+    </div>
+  </section>
+
+  
+<!-- Dresses Section -->
+ <section id="dresses" class="section">
+    <h2 class="section-title">Dresses</h2>
+    <div class="products-grid">
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="images/dress1.webp" alt="Floral Dress">
+        </div>
+        <div class="product-info">
+          <h3>Floral Dress</h3>
+          <div class="rating">⭐⭐⭐⭐⭐</div>
+          <p class="review">"Pretty and lightweight for summer!"</p>
+          <p class="price">₹799</p>
+          <button class="add-to-cart" data-name="Floral Dress" data-price="799">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="images/dress2.webp" alt="Maxi Dress">
+        </div>
+        <div class="product-info">
+          <h3>Maxi Dress</h3>
+          <div class="rating">⭐⭐⭐⭐☆</div>
+          <p class="review">"Elegant and flowy. Perfect for parties."</p>
+          <p class="price">₹999</p>
+          <button class="add-to-cart" data-name="Maxi Dress" data-price="999">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="images/dress3.webp" alt="Casual Dress">
+        </div>
+        <div class="product-info">
+          <h3>Casual Dress</h3>
+          <div class="rating">⭐⭐⭐☆☆</div>
+          <p class="review">"Comfortable for daily wear."</p>
+          <p class="price">₹699</p>
+          <button class="add-to-cart" data-name="Casual Dress" data-price="699">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="images/dress4.webp" alt="Party Dress">
+        </div>
+        <div class="product-info">
+          <h3>Party Dress</h3>
+          <div class="rating">⭐⭐⭐⭐⭐</div>
+          <p class="review">"Stunning look! Got so many compliments."</p>
+          <p class="price">₹1199</p>
+          <button class="add-to-cart" data-name="Party Dress" data-price="1199">Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+<section id="footwear" class="section">
+  <h2 class="section-title">Footwear</h2>
+  <div class="products-grid">
+    
+    <div class="product-card">
+      <div class="product-image">
+        <img src="images/footwear2.webp" alt="Heels">
+      </div>
+      <div class="product-info">
+        <h3>Elegant Heels</h3>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p class="review">"Super comfortable and classy!"</p>
+        <p class="price">₹2,499</p>
+        <button class="add-to-cart" data-name="Elegant Heels" data-price="2499">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="images/footwear3.avif" alt="Casual Loafers">
+      </div>
+      <div class="product-info">
+        <h3>Casual Loafers</h3>
+        <div class="rating">⭐⭐⭐⭐☆</div>
+        <p class="review">"Looks great with jeans and very comfy!"</p>
+        <p class="price">₹1,499</p>
+        <button class="add-to-cart" data-name="Casual Loafers" data-price="1499">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="images/footware4.jpg" alt="Running Shoes">
+      </div>
+      <div class="product-info">
+        <h3>Running Shoes</h3>
+        <div class="rating">⭐⭐⭐⭐☆</div>
+        <p class="review">"Perfect for daily jogs. Very light!"</p>
+        <p class="price">₹2,199</p>
+        <button class="add-to-cart" data-name="Running Shoes" data-price="2199">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="images/footwear5.webp" alt="Ankle Boots">
+      </div>
+      <div class="product-info">
+        <h3>Ankle Boots</h3>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p class="review">"Stylish and keeps feet warm. Love it!"</p>
+        <p class="price">₹3,299</p>
+        <button class="add-to-cart" data-name="Ankle Boots" data-price="3299">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="images/footwear6.webp" alt="Slides">
+      </div>
+      <div class="product-info">
+        <h3>Comfort Slides</h3>
+        <div class="rating">⭐⭐⭐☆☆</div>
+        <p class="review">"Nice for home use, value for money."</p>
+        <p class="price">₹899</p>
+        <button class="add-to-cart" data-name="Comfort Slides" data-price="899">Add to Cart</button>
+      </div>
+    </div>
+
+   
+
+  </div>
+</section>
+
+
+<section id="jewellery" class="section">
+  <h2 class="section-title">Jewellery</h2>
+  <div class="products-grid">
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="images/jewellery1.jpg" alt="Gold Necklace">
+      </div>
+      <div class="product-info">
+        <h3>Gold Necklace</h3>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p class="review">"Elegant and beautifully crafted."</p>
+        <p class="price">₹4,999</p>
+        <button class="add-to-cart" data-name="Gold Necklace" data-price="4999">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="images/jewellery2.jpg" alt="Diamond Earrings">
+      </div>
+      <div class="product-info">
+        <h3>Diamond Earrings</h3>
+        <div class="rating">⭐⭐⭐⭐☆</div>
+        <p class="review">"Sparkling finish. Looks luxurious!"</p>
+        <p class="price">₹3,499</p>
+        <button class="add-to-cart" data-name="Diamond Earrings" data-price="3499">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="images/jewellery3.jpg" alt="Silver Bangles">
+      </div>
+      <div class="product-info">
+        <h3>Silver Bangles</h3>
+        <div class="rating">⭐⭐⭐☆☆</div>
+        <p class="review">"Stylish and lightweight for daily use."</p>
+        <p class="price">₹1,999</p>
+        <button class="add-to-cart" data-name="Silver Bangles" data-price="1999">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="images/jewellery4.jpg" alt="Studded Ring">
+      </div>
+      <div class="product-info">
+        <h3>Studded Ring</h3>
+        <div class="rating">⭐⭐⭐⭐☆</div>
+        <p class="review">"Perfect gift item. Loved the sparkle!"</p>
+        <p class="price">₹1,299</p>
+        <button class="add-to-cart" data-name="Studded Ring" data-price="1299">Add to Cart</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section id="cosmetics" class="section">
+  <h2 class="section-title">Cosmetics Collection</h2>
+  <div class="products-grid">
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="images/cosmetic1.jpg" alt="Matte Lipstick">
+      </div>
+      <div class="product-info">
+        <h3>Matte Lipstick</h3>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p class="review">"Smooth texture and long-lasting color."</p>
+        <p class="price">₹499</p>
+        <button class="add-to-cart" data-name="Matte Lipstick" data-price="499">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="images/cosmetic2.jpg" alt="Liquid Foundation">
+      </div>
+      <div class="product-info">
+        <h3>Liquid Foundation</h3>
+        <div class="rating">⭐⭐⭐⭐☆</div>
+        <p class="review">"Great coverage, blends well."</p>
+        <p class="price">₹899</p>
+        <button class="add-to-cart" data-name="Liquid Foundation" data-price="899">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="images/cosmetic3.jpg" alt="Waterproof Mascara">
+      </div>
+      <div class="product-info">
+        <h3>Waterproof Mascara</h3>
+        <div class="rating">⭐⭐⭐☆☆</div>
+        <p class="review">"Lasts all day, no smudging."</p>
+        <p class="price">₹599</p>
+        <button class="add-to-cart" data-name="Waterproof Mascara" data-price="599">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="images/cosmetic4.webp" alt="Compact Powder">
+      </div>
+      <div class="product-info">
+        <h3>Compact Powder</h3>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p class="review">"Gives a matte finish. Love it!"</p>
+        <p class="price">₹749</p>
+        <button class="add-to-cart" data-name="Compact Powder" data-price="749">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="images/cosmetic6.jpg" alt="Makeup Remover">
+      </div>
+      <div class="product-info">
+        <h3>Makeup Remover</h3>
+        <div class="rating">⭐⭐⭐☆☆</div>
+        <p class="review">"Gentle on skin and effective."</p>
+        <p class="price">₹299</p>
+        <button class="add-to-cart" data-name="Makeup Remover" data-price="299">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="images/cosmetic5.jpg" alt="Blush Palette">
+      </div>
+      <div class="product-info">
+        <h3>Blush Palette</h3>
+        <div class="rating">⭐⭐⭐⭐☆</div>
+        <p class="review">"Vibrant shades, easy to blend."</p>
+        <p class="price">₹1,099</p>
+        <button class="add-to-cart" data-name="Blush Palette" data-price="1099">Add to Cart</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="electronics" class="section">
+  <h2 class="section-title">Electronics</h2>
+  <div class="products-grid">
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="images/electronics1.webp" alt="Smartphone">
+      </div>
+      <div class="product-info">
+        <h3>Smartphone X10</h3>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p class="review">"Fast performance and great camera."</p>
+        <p class="price">₹18,999</p>
+        <button class="add-to-cart" data-name="Smartphone X10" data-price="18999">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="images/electronics2.webp" alt="Smartwatch">
+      </div>
+      <div class="product-info">
+        <h3>Smartwatch Pro</h3>
+        <div class="rating">⭐⭐⭐⭐☆</div>
+        <p class="review">"Looks sleek and tracks health accurately."</p>
+        <p class="price">₹2,799</p>
+        <button class="add-to-cart" data-name="Smartwatch Pro" data-price="2799">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="images/hotdeal3.jpg" alt="Bluetooth Speaker">
+      </div>
+      <div class="product-info">
+        <h3>Bluetooth Speaker</h3>
+        <div class="rating">⭐⭐⭐☆☆</div>
+        <p class="review">"Good sound quality but average bass."</p>
+        <p class="price">₹1,299</p>
+        <button class="add-to-cart" data-name="Bluetooth Speaker" data-price="1299">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="images/hotdeal2.avif" alt="Wireless Earbuds">
+      </div>
+      <div class="product-info">
+        <h3>Wireless Earbuds</h3>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p class="review">"Excellent noise cancellation and fit."</p>
+        <p class="price">₹1,099</p>
+        <button class="add-to-cart" data-name="Wireless Earbuds" data-price="1099">Add to Cart</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<section class="section" id="hot-deals">
+  <h2 class="section-title">🔥 Hot Deals</h2>
+  <div class="products-grid">
+
+    <!-- Deal Card 1 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="images/hotdeal1.avif" alt="Smart Watch" />
+      </div>
+      <div class="product-info">
+        <h3>Smart Watch Pro</h3>
+        <div class="rating">⭐⭐⭐⭐☆</div>
+        <p class="review">"Best features at a budget price!"</p>
+        <p class="price"><del>₹1200</del> <strong>₹799</strong></p>
+        <button class="add-to-cart" data-name="Smart Watch Pro" data-price="799">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Deal Card 2 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="images/hotdeal2.avif" alt="Wireless Earbuds" />
+      </div>
+      <div class="product-info">
+        <h3>Wireless Earbuds</h3>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p class="review">"Clear sound and great battery life."</p>
+        <p class="price"><del>₹600</del> <strong>₹399</strong></p>
+        <button class="add-to-cart" data-name="Wireless Earbuds" data-price="399">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Deal Card 3 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="images/hotdeal3.jpg" alt="Portable Speaker" />
+      </div>
+      <div class="product-info">
+        <h3>Portable Speaker</h3>
+        <div class="rating">⭐⭐⭐☆☆</div>
+        <p class="review">"Good quality, compact, and powerful."</p>
+        <p class="price"><del>₹1500</del> <strong>₹1099</strong></p>
+        <button class="add-to-cart" data-name="Portable Speaker" data-price="1099">Add to Cart</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h4>MyShop</h4>
+      <p>Your one-stop shop for fashion, gadgets, and more.</p>
+    </div>
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="dresses.html">Dresses</a></li>
+        <li><a href="cosmetics.html">Cosmetics</a></li>
+        <li><a href="footwear.html">Footwear</a></li>
+        <li><a href="jewellery.html">Jewellery</a></li>
+        <li><a href="electronics.html">Electronics</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Contact</h4>
+      <p>Email: support@myshop.com</p>
+      <p>Phone: +91 9876543210</p>
+      <p>Address: Mumbai, India</p>
+    </div>
+    <div class="footer-column">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 MyShop. All rights reserved.</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
